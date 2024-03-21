@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivias de Peliculas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="bienvenida_inicio">
+        <div class="titulo">
+          <span> Trivias de Peliculas</span>
+        </div>
+
+        <div class="formulario">
+          <label for="name">Ingresa tu Nombre:</label>
+          <br />
+          <input type="text" id="name" placeholder="Escriba aqui su nombre" />
+          <br />
+
+          <button onclick="obtenerNombre()" class="btn-inicio">Comenzar</button>
+        </div>
+        <h3 id="mostrarNombre"></h3>
+      </div>
+      <div class="categorias">
+        <label for="name">Selecciona una categoría</label>
+        <div>
+          <button
+            onclick="seleccionarCategoria('categoria1')"
+            class="btn btn-categoria"
+          >
+            Harry Potter
+          </button>
+          <button
+            onclick="seleccionarCategoria('categoria2')"
+            class="btn btn-categoria"
+          >
+            Los Juegos del Hambre
+          </button>
+        </div>
+      </div>
+      <div class="trivia t1">
+        <div class="preguntas p1">
+          <span class="pregunta"
+            >¿Cómo llaman los magos a las personas que no tienen ninguna
+            habilidad mágica?
+          </span>
+          <form id="miFormulario">
+            <input type="radio" name="respuesta" value="mortifagos" />
+            Mortifagos <br />
+            <input type="radio" name="respuesta" value="muggles" />
+            Muggles<br />
+            <input type="radio" name="respuesta" value="dementores" />
+            Dementores<br />
+            <input
+              class="btn"
+              type="button"
+              value="Validar"
+              onclick="validarRespuestaP1()"
+            />
+
+            <input
+              class="btn"
+              type="button"
+              value="Siguiente"
+              onclick="siguientePreguntaP2()"
+            />
+          </form>
+        </div>
+        <div class="preguntas p2">
+          <span class="pregunta"
+            >¿Cómo se llama la pequeña bola dorada que te hace ganar un partido
+            de quidditch?</span
+          >
+          <form id="miFormulario">
+            <input type="radio" name="respuesta2" value="snitch" />
+            Snitch
+            <br />
+            <input type="radio" name="respuesta2" value="bladder" />
+            Bladder
+            <br />
+            <input type="radio" name="respuesta2" value="sprigg" />
+            Sprigg<br />
+            <input
+              class="btn"
+              type="button"
+              value="Validar"
+              onclick="validarRespuestaP2()"
+            />
+            <input
+              class="btn"
+              type="button"
+              value="Siguiente"
+              onclick="siguientePreguntaP3()"
+            />
+          </form>
+        </div>
+        <div class="preguntas p3">
+          <span class="pregunta">¿Cómo se llama la lechuza de Harry?</span>
+          <div class="respuesta">
+            <form id="miFormulario">
+              <input type="radio" name="respuesta3" value="hippy" />
+              Hippy
+              <br />
+              <input type="radio" name="respuesta3" value="hedwig" />
+              Hedwig
+              <br />
+              <input type="radio" name="respuesta3" value="houdini" />
+              Houdini<br />
+              <input
+                class="btn"
+                type="button"
+                value="Validar"
+                onclick="validarRespuestaP3()"
+              />
+              <input
+                class="btn"
+                type="button"
+                value="Volver a Jugar"
+                onclick="reiniciar1()"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="trivia t2">
+        <div class="preguntas p11">
+          <span class="pregunta">¿Quién es la hermana de Katniss? </span>
+          <form id="miFormulario">
+            <input type="radio" name="respuesta4" value="poppy" />
+            Poppy
+            <br />
+            <input type="radio" name="respuesta4" value="azalea" />
+            Azalea
+            <br />
+            <input type="radio" name="respuesta4" value="primrose" />
+            Primrose<br />
+            <input
+              class="btn"
+              type="button"
+              value="Validar"
+              onclick="validarRespuestaP11()"
+            />
+
+            <input
+              class="btn"
+              type="button"
+              value="Siguiente"
+              onclick="siguientePreguntaP12()"
+            />
+          </form>
+        </div>
+        <h3></h3>
+        <div class="preguntas p12">
+          <span class="pregunta">¿De qué distrito es Katniss?</span>
+          <form id="miFormulario">
+            <input type="radio" name="respuesta5" value="10" />
+            10
+            <br />
+            <input type="radio" name="respuesta5" value="12" />
+            12
+            <br />
+            <input type="radio" name="respuesta5" value="13" />
+            13<br />
+            <input
+              class="btn"
+              type="button"
+              value="Validar"
+              onclick="validarRespuestaP12()"
+            />
+            <input
+              class="btn"
+              type="button"
+              value="Volver a Jugar"
+              onclick="reiniciar2()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

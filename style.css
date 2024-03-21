@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1f25;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.8)),
+    url("assets/fondo-trivia1.jpg");
+  /* background-image: url("assets/fondo-trivia.jpg"); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.contenedor {
+  background-color: #131517e0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 500px;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  flex-direction: column;
+}
+
+.bienvenida_inicio {
+  text-align: center;
+}
+.titulo {
+  font-size: 35px;
+  color: white;
+}
+.formulario,
+.categorias label {
+  margin: 20px 0px;
+  color: white;
+  font-size: 18px;
+}
+
+.formulario input {
+  margin-top: 20px;
+  padding: 15px 50px;
+}
+.btn-inicio {
+  margin-top: 20px;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: #5d6390;
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+}
+#mostrarNombre {
+  color: white;
+}
+.categorias {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #9d72ff;
+  color: #131517;
+  border-radius: 8px;
+  border: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover,
+.btn-inicio:hover {
+  background: #7e48fc;
+  transition: 0.3s;
+}
+
+.trivia {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+}
+.preguntas {
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.respuesta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-inicio {
+  background: #9d72ff;
+  border: 0;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+.formulario label {
+  font-size: 20px;
+}
+
+.titulo span {
+  color: #7e48fc;
+  font-size: 50px;
+  font-weight: 800;
+}
+#name {
+  background: #1e1f25;
+  border-radius: 12px;
+  padding: 6px;
+  /* outline: #ff9f3e; */
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #9c72ff4b;
+  width: 250px;
+  text-align: center;
+}
+#mostrarNombre {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.categorias div {
+  display: flex;
+  gap: 20px;
+}
+
+.p1,
+.p2,
+.p3,
+.p11,
+.p12,
+.p13 {
+  display: none;
+}
